@@ -97,12 +97,7 @@ export interface DesiredCapabilities extends Capabilities, SauceLabsCapabilities
     platform?: string;
     public?: any;
 
-    loggingPrefs?: {
-        browser?: LoggingPreferences;
-        driver?: LoggingPreferences;
-        server?: LoggingPreferences;
-        client?: LoggingPreferences;
-    };
+    loggingPrefs?: LoggingPreferences;
 
     // Read-write capabilities
     javascriptEnabled?: boolean;
